@@ -31,7 +31,7 @@ class Main extends PluginBase {
                 return;
             }
 	    if (!isset($toggle)){
-	        $log->error("[ERROR] It cant be blank the config!")
+	        $log->error("[ERROR] It cant be blank the config!");
 	        $this->getConfig()->set("enabled", true);
 	    } else {
 	     if ($toggle == true){
