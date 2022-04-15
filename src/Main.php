@@ -6,13 +6,13 @@ namespace xqwtxon\SlapBack;
 use pocketmine\plugin\PluginBase;
 use xqwtxon\SlapBack\SlapInfo;
 
-class Main extends PluginBase {
+class Main extends PluginBase implements SlapInfo{
     public function onLoad() :void {
         $this->saveResource("config.yml");
         $log = $this->getServer()->getLogger();
         $config = $this->getConfig();
         if ($config->get("config-version") == SlapInfo::CONFIG_VERSION){
-            @rename($this->getDataFolder()."/"."config.yml",$this->getDataFolder()."/"."old-config.yml");
+            @rename($this->getDataFolder()."/"."config.yml", $this->getDataFolder()."/"."old-config.yml");
             $log->notice("[NOTICE] Your configuration is outdated! The configuration was renamed as old-config.yml");
             $this->saveResource("config.yml");
         } else {
@@ -20,7 +20,7 @@ class Main extends PluginBase {
             $log->info("[INFO] The plugin was loaded!");
         }
     }
-	public function onEnable(){
+	public function onEnable() :void{
 	    $toggle = $this->getConfig()->get("enabled");
 	    $log = $this->getServer()->getLogger();
 	    if (SlapInfo::PROTOCOL_VERSION == ProtocolInfo::CURRENT_PROTOCOL){
@@ -42,6 +42,7 @@ class Main extends PluginBase {
 	     if ($toggle == false){
 	     $log->info("[INFO] The plugin was disabled by configuration.");
 	     $this->getServer()->getPluginManager()->disablePlugin($this);
+	     return;
 	     }
 	}
 }
