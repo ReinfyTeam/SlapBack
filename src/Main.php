@@ -44,7 +44,7 @@ class Main extends PluginBase {
 	     $this->getServer()->getPluginManager()->disablePlugin($this);
 	     }
 	}
-	
+}
 	public function onDisable() :void{
 	    $log = $this->getServer()->getLogger();
 	    $log->info("[INFO] Successfully plugin disabled!");
