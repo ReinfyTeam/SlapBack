@@ -1,5 +1,5 @@
 # SlapBackV2
-[![](https://poggit.pmmp.io/shield.state/SlapperRotationV2)](https://poggit.pmmp.io/p/SlapBackV2)
+[![](https://poggit.pmmp.io/shield.state/SlapBackV2)](https://poggit.pmmp.io/p/SlapBackV2)
 [![](https://poggit.pmmp.io/shield.api/SlapBackV2)](https://poggit.pmmp.io/p/SlapBackV2)<br>
 This plugin was updated on 4.0.0 api!<br>
 This is designed for PocketMine-MP Slapper, This plugin uses Slapper plugin in PocketMine-MP<br>
