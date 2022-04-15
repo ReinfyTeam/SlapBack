@@ -2,9 +2,9 @@
 
 namespace xqwtxon\SlapBack;
 
-
 use pocketmine\plugin\PluginBase;
 use xqwtxon\SlapBack\SlapInfo;
+use xqwtxon\SlapBack\SlapListener;
 
 class Main extends PluginBase implements SlapInfo{
     public function onLoad() :void {
