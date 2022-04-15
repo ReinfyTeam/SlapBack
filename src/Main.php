@@ -1,10 +1,10 @@
 <?php
 
-namespace xqwtxon\SlapBack;
+namespace xqwtxon\SlapBackV2;
 
 use pocketmine\plugin\PluginBase;
-use xqwtxon\SlapBack\SlapInfo;
-use xqwtxon\SlapBack\SlapListener;
+use xqwtxon\SlapBackV2\SlapInfo;
+use xqwtxon\SlapBackV2\SlapListener;
 use pocketmine\utils\TextFormat;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\VersionInfo;
@@ -21,6 +21,10 @@ class Main extends PluginBase implements SlapInfo{
         } else {
             $this->saveConfig();
             $log->info("[INFO] The plugin was loaded!");
+        }
+        if (SlapperInfo::IS_DEVELOPMENT_BUILD == true){
+            $log->warning($prefix.TextFormat::RED."Your SlapperRotation is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
+            return;
         }
     }
 	public function onEnable() :void{

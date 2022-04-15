@@ -1,11 +1,11 @@
 <?php
 
-namespace xqwtxon\SlapBack;
+namespace xqwtxon\SlapBackV2;
 
-use xqwtxon\SlapBack\Main;
+use xqwtxon\SlapBackV2\Main;
 use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
-use xqwtxon\SlapBack\SlapListener;
+use xqwtxon\SlapBackV2\SlapListener;
 use pocketmine\event\Listener;
 use pocketmine\entity\Human;
 use pocketmine\network\mcpe\protocol\AnimatePacket;

@@ -1,9 +1,9 @@
 # SlapBackV2
-[![](https://poggit.pmmp.io/shield.state/SlapperRotationV2)](https://poggit.pmmp.io/p/SlapperRotationV2)
-[![](https://poggit.pmmp.io/shield.api/SlapperRotationV2)](https://poggit.pmmp.io/p/SlapperRotationV2)<br>
-This plugin was updated on 4.0.0 api!
-This is designed for PocketMine-MP Slapper, This plugin uses Slapper plugin in PocketMine-MP
-It is plugin that looking slapper to player within the chunks!
+[![](https://poggit.pmmp.io/shield.state/SlapperRotationV2)](https://poggit.pmmp.io/p/SlapBackV2)
+[![](https://poggit.pmmp.io/shield.api/SlapBackV2)](https://poggit.pmmp.io/p/SlapBackV2)<br>
+This plugin was updated on 4.0.0 api!<br>
+This is designed for PocketMine-MP Slapper, This plugin uses Slapper plugin in PocketMine-MP<br>
+It is plugin that Slappers now hit back at you!
 
 # Features
 - Ability to configure the distance view of the Slappers.
@@ -12,7 +12,7 @@ It is plugin that looking slapper to player within the chunks!
 This plugin was designed and work in pocketmine. If you are using fork/spoon of PocketMine-MP. Your issues will automatically closed.
 
 # How to Install?
-- You must have Slapper Plugin, you can download from [poggit here](https://poggit.pmmp.io/p/Slapper/2.0.6)!
+- You must have Slapper Plugin, you can download from [poggit here](https://poggit.pmmp.io/p/Slapper/)!
 - Just put this plugin in your `plugins/` folder, and it should work!<br>
 - You can configure the plugin by accessing `plugin_data/SlapBackV2/config.yml`
 
