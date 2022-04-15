@@ -23,7 +23,7 @@ class Main extends PluginBase implements SlapInfo{
             $log->info("[INFO] The plugin was loaded!");
         }
         if (SlapInfo::IS_DEVELOPMENT_BUILD == true){
-            $log->warning($prefix.TextFormat::RED."Your SlapBack is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
+            $log->warning(TextFormat::RED."Your SlapBack is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
             return;
         }
     }
