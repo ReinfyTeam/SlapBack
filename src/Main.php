@@ -5,6 +5,9 @@ namespace xqwtxon\SlapBack;
 use pocketmine\plugin\PluginBase;
 use xqwtxon\SlapBack\SlapInfo;
 use xqwtxon\SlapBack\SlapListener;
+use pocketmine\utils\TextFormat;
+use pocketmine\network\mcpe\protocol\ProtocolInfo;
+use pocketmine\VersionInfo;
 
 class Main extends PluginBase implements SlapInfo{
     public function onLoad() :void {
