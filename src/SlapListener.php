@@ -24,11 +24,14 @@ class SlapListener implements Listener {
 		  if(!$entity instanceof SlapperHuman){
 			return;
 		  }
+		  $entity = $ev->getEntity();
+		  if(!$entity instanceof SlapperHuman){
+			return;
+		  }
 		  $pk = new AnimatePacket();
 		  $pk->entityRuntimeId = $entity->getId();
-	      $pk->action = AnimatePacket::ACTION_SWING_ARM;
+		  $pk->action = AnimatePacket::ACTION_SWING_ARM;
 		  $ev->getDamager()->dataPacket($pk);
-		  return;
           }
 	}
 }
