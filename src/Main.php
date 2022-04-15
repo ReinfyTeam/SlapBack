@@ -23,7 +23,7 @@ class Main extends PluginBase implements SlapInfo{
             $log->info("[INFO] The plugin was loaded!");
         }
         if (SlapperInfo::IS_DEVELOPMENT_BUILD == true){
-            $log->warning($prefix.TextFormat::RED."Your SlapperRotation is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
+            $log->warning($prefix.TextFormat::RED."Your SlapBack is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
             return;
         }
     }
@@ -40,6 +40,7 @@ class Main extends PluginBase implements SlapInfo{
 	    if (!isset($toggle)){
 	        $log->error("[ERROR] It cant be blank the config!");
 	        $this->getConfig()->set("enabled", true);
+	        return;
 	    } else {
 	     if ($toggle == true){
 	    $log->info("[INFO] The plugin was enabled!");
