@@ -2,7 +2,7 @@
 
 namespace xqwtxon\SlapBack;
 
-interface SlapperInfo {
+interface SlapInfo {
     /**
      * NOTE FOR DEVELOPERS:
      * CHANGING THIS COULD BREAK THIS PLUGIN!
