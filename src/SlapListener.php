@@ -5,7 +5,6 @@ namespace xqwtxon\SlapBackV2;
 use xqwtxon\SlapBackV2\Main;
 use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
-use xqwtxon\SlapBackV2\SlapListener;
 use pocketmine\event\Listener;
 use pocketmine\entity\Human;
 use pocketmine\network\mcpe\protocol\AnimatePacket;
