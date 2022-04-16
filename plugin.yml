@@ -1,6 +1,6 @@
 name: SlapBackV2
 main: Main
-src-namespace-prefix: src\SlapBackV2
+src-namespace-prefix: xqwtxon\SlapBackV2
 version: 2.0.1
 api: [4.0.0]
 depend: Slapper
