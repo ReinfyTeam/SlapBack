@@ -1,8 +1,10 @@
-name: SlapBackV2
-main: Main
+---
+name: SlapperRotationV2
+version: 2.0.0
+main: xqwtxon\SlapBackV2\Main
+api: 4.2.8
 src-namespace-prefix: xqwtxon\SlapBackV2
-version: 2.0.1
-api: [4.0.0]
 depend: Slapper
 author: xqwtxon
 description: Slappers now hit back at you!
+...
