@@ -20,7 +20,6 @@ class Main extends PluginBase implements SlapInfo{
             $this->saveResource("config.yml");
         } else {
             $this->saveConfig();
-            $log->info("[INFO] The plugin was loaded!");
         }
         if (SlapInfo::IS_DEVELOPMENT_BUILD == true){
             $log->warning(TextFormat::RED."Your SlapBack is in development build! You may expect crash during the plugin. You can make issue about this plugin by visiting plugin github issue!");
@@ -53,10 +52,5 @@ class Main extends PluginBase implements SlapInfo{
 	     return;
 	     }
 	}
-}
-	public function onDisable() :void{
-	    $log = $this->getServer()->getLogger();
-	    $log->info("[INFO] Successfully plugin disabled!");
-	    $this->saveConfig();
-	}
+} 
 }
