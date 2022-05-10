@@ -17,8 +17,8 @@ interface SlapInfo {
     const PLUGIN_DESCRIPTION = "Slappers now hit back at you!";
     const MAIN = "Main";
     const CONFIG_VERSION = "1.0.0";
-    const POCKETMINE_VERSION = "4.2.6";
-    const PROTOCOL_VERSION = 486;
+    const POCKETMINE_VERSION = "4.3.2";
+    const PROTOCOL_VERSION = 503;
     const PLUGIN_VERSION = "2.0.1";
     const VERSION = "v2.0.1";
     const IS_DEVELOPMENT_BUILD = false;
