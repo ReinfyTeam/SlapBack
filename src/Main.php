@@ -12,11 +12,11 @@ use pocketmine\VersionInfo;
 class Main extends PluginBase implements SlapInfo{
     public function onLoad() :void {
         $this->saveResource("config.yml");
-        $log = $this->getServer()->getLogger();
+        $log = $this->getLogger();
         $config = $this->getConfig();
         if ($config->get("config-version") == SlapInfo::CONFIG_VERSION){
             @rename($this->getDataFolder()."/"."config.yml", $this->getDataFolder()."/"."old-config.yml");
-            $log->notice("[NOTICE] Your configuration is outdated! The configuration was renamed as old-config.yml");
+            $log->notice("Your configuration is outdated! The configuration was renamed as old-config.yml");
             $this->saveResource("config.yml");
         } else {
             $this->saveConfig();
@@ -37,17 +37,17 @@ class Main extends PluginBase implements SlapInfo{
                 return;
             }
 	    if (!isset($toggle)){
-	        $log->error("[ERROR] It cant be blank the config!");
+	        $log->error("It cant be blank the config!");
 	        $this->getConfig()->set("enabled", true);
 	        return;
 	    } else {
 	     if ($toggle == true){
-	    $log->info("[INFO] The plugin was enabled!");
+	    $log->info("The plugin was enabled!");
 		$this->getServer()->getPluginManager()->registerEvents(new SlapListener($this), $this);
 		return;
 	     }
 	     if ($toggle == false){
-	     $log->info("[INFO] The plugin was disabled by configuration.");
+	     $log->info("The plugin was disabled by configuration.");
 	     $this->getServer()->getPluginManager()->disablePlugin($this);
 	     return;
 	     }
