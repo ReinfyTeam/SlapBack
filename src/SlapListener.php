@@ -2,6 +2,7 @@
 
 namespace xqwtxon\SlapBackV2;
 
+use xqwtxon\SlapBackv2\Main;
 use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
 use pocketmine\event\Listener;
@@ -10,7 +11,7 @@ use pocketmine\player\Player;
 use pocketmine\entity\animation\ArmSwingAnimation;
 
 class SlapListener implements Listener {
-    public function __construct(){
+    public function __construct(private Main $plugin){
     //NOOP
    } 
     public function onSlapperHit(SlapperHitEvent $ev){
