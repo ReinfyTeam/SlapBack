@@ -18,7 +18,7 @@ class Main extends PluginBase {
             $log->notice("Your configuration is outdated! The configuration was renamed as old-config.yml");
             $this->saveResource("config.yml");
         } else {
-            $this->saveConfig();
+            return;
         }
     }
 	public function onEnable() :void{
@@ -31,7 +31,7 @@ class Main extends PluginBase {
 	    } else {
 	    if ($toggle == true){
 	        $log->info("The plugin was enabled!");
-		$this->getServer()->getPluginManager()->registerEvents(new SlapListener($this), $this);
+		$this->getServer()->getPluginManager()->registerEvents(new SlapListener(), $this);
 		return;
 	     }
 	     if ($toggle == false){
