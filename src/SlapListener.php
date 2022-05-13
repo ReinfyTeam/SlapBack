@@ -26,10 +26,6 @@ class SlapListener implements Listener {
 		  if(!$entity instanceof SlapperHuman){
 			return;
 		  }
-		  /*$pk = new AnimatePacket();
-		  $pk->actorRuntimeId = $entity->getId();
-		  $pk->action = AnimatePacket::ACTION_SWING_ARM;
-		  $ev->getDamager()->getNetworkSession()->sendDataPacket($pk)
                   $player = $ev->getDamager();
                   $entity->broadcastAnimation(new ArmSwingAnimation($entity), [$player]);  
           }
