@@ -10,16 +10,15 @@ use pocketmine\player\Player;
 use pocketmine\entity\animation\ArmSwingAnimation;
 
 class SlapListener implements Listener {
-    
+    public function __construct(){
+    //NOOP
+   } 
     public function onSlapperHit(SlapperHitEvent $ev){
 		  $entity = $ev->getEntity();
 		  if(!$entity instanceof SlapperHuman){
 			return;
 		  }
 		  $entity = $ev->getEntity();
-		  if(!$entity instanceof SlapperHuman){
-			return;
-		  }
                   if(!$entity instanceof Player){
                          return;
                   } 
