@@ -11,7 +11,7 @@ use pocketmine\player\Player;
 use pocketmine\entity\animation\ArmSwingAnimation;
 
 class SlapListener implements Listener {
-    public function __construct($this){
+    public function __construct(Main){
     //NOOP
    } 
     public function onSlapperHit(SlapperHitEvent $ev){
