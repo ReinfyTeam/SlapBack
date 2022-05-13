@@ -7,8 +7,7 @@ use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
 use pocketmine\event\Listener;
 use pocketmine\entity\Human;
-use pocketmine\network\mcpe\protocol\AnimatePacket;
-
+use pocketmine\entity\animation\ArmSwingAnimation;
 class SlapListener implements Listener {
     
     public function __construct(private Main $plugin){
@@ -27,10 +26,12 @@ class SlapListener implements Listener {
 		  if(!$entity instanceof SlapperHuman){
 			return;
 		  }
-		  $pk = new AnimatePacket();
+		  /*$pk = new AnimatePacket();
 		  $pk->actorRuntimeId = $entity->getId();
 		  $pk->action = AnimatePacket::ACTION_SWING_ARM;
-		  $ev->getDamager()->getNetworkSession()->sendDataPacket($pk);
+		  $ev->getDamager()->getNetworkSession()->sendDataPacket($pk);*/
+                  $player = $ev->getDamager();
+                  $ev->getDamager()->broadcastAnimation(new ArmSwingAnimation($entity), $player); 
           }
 	}
 }
