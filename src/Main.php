@@ -22,23 +22,8 @@ class Main extends PluginBase {
         }
     }
 	public function onEnable() :void{
-	    $toggle = $this->getConfig()->get("enabled");
-	    $log = $this->getServer()->getLogger();
-	    if (!isset($toggle)){
-	        $log->error("It cant be blank the config!");
-	        $this->getConfig()->set("enabled", true);
-	        return;
-	    } else {
-	    if ($toggle == true){
-	        $log->info("The plugin was enabled!");
-		$this->getServer()->getPluginManager()->registerEvents(new SlapListener(), $this);
-		return;
-	     }
-	     if ($toggle == false){
-	     $log->info("The plugin was disabled by configuration.");
-	     $this->getServer()->getPluginManager()->disablePlugin($this);
-	     return;
-	     }
+	    $log = $this->getLogger();
+	    $this->getServer()->getPluginManager()->registerEvents(new SlapListener(), $this); 
 	}
 } 
 }
