@@ -10,4 +10,3 @@ class Main extends PluginBase {
 	    $this->getServer()->getPluginManager()->registerEvents(new SlapListener(), $this); 
 	}
 } 
-}
