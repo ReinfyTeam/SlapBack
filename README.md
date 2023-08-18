@@ -1,12 +1,10 @@
 # SlapBackV2
-[![](https://poggit.pmmp.io/shield.state/SlapBackV2)](https://poggit.pmmp.io/p/SlapBackV2)
-[![](https://poggit.pmmp.io/shield.api/SlapBackV2)](https://poggit.pmmp.io/p/SlapBackV2)<br>
-This plugin was updated on 4.0.0 api!<br>
-This is designed for PocketMine-MP Slapper, This plugin uses Slapper plugin in PocketMine-MP<br>
-It is plugin that Slappers now hit back at you!
+[![](https://poggit.pmmp.io/shield.state/SlapBack)](https://poggit.pmmp.io/p/SlapBack)
+[![](https://poggit.pmmp.io/shield.api/SlapBack)](https://poggit.pmmp.io/p/SlapBack)<br>
+Slappers can now hit back at you!
 
 # Features
-- Ability to configure the distance view of the Slappers.
+- Ability to configure the behavior of the Slappers.
 
 # Disclaimer
 This plugin was designed and work in pocketmine. If you are using fork/spoon of PocketMine-MP. Your issues will automatically closed.
@@ -19,6 +17,6 @@ This plugin was designed and work in pocketmine. If you are using fork/spoon of 
 # Report a Issue/Bug
 You found a bug or a plugin issue?
 - Contact support in the [Discord Server](https://discord.gg/v2rNeHaptd)
-- Create an [Issue](https://github.com/xqwtxon/SlapBackV2/issues)
+- Create an [Issue](https://github.com/xqwtxon/SlapBack/issues)
 - Write your bug & the issue you are having with all informations including the crash or errors so I can track the issue.
 - Submit the issue and be patient for a response for a solution to your problem :D
