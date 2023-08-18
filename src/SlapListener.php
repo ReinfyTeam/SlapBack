@@ -1,8 +1,8 @@
 <?php
 
-namespace xqwtxon\SlapBackV2;
+namespace ReinfyTeam\SlapBack;
 
-use xqwtxon\SlapBackV2\Main;
+use ReinfyTeam\SlapBack\Main;
 use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
 use pocketmine\event\Listener;
