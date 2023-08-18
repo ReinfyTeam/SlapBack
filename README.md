@@ -1,4 +1,4 @@
-# SlapBackV2
+# SlapBack
 [![](https://poggit.pmmp.io/shield.state/SlapBack)](https://poggit.pmmp.io/p/SlapBack)
 [![](https://poggit.pmmp.io/shield.api/SlapBack)](https://poggit.pmmp.io/p/SlapBack)<br>
 Slappers can now hit back at you!
@@ -12,7 +12,7 @@ This plugin was designed and work in pocketmine. If you are using fork/spoon of 
 # How to Install?
 - You must have Slapper Plugin, you can download from [poggit here](https://poggit.pmmp.io/p/Slapper/)!
 - Just put this plugin in your `plugins/` folder, and it should work!<br>
-- You can configure the plugin by accessing `plugin_data/SlapBackV2/config.yml`
+- You can configure the plugin by accessing `plugin_data/SlapBack/config.yml`
 
 # Report a Issue/Bug
 You found a bug or a plugin issue?
