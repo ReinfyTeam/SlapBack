@@ -1,9 +1,9 @@
 <?php
 
-namespace xqwtxon\SlapBackV2;
+namespace ReinfyTeam\SlapBack;
 
 use pocketmine\plugin\PluginBase;
-use xqwtxon\SlapBackV2\SlapListener;
+use ReinfyTeam\SlapBack\SlapListener;
 
 class Main extends PluginBase {
 	public function onEnable() :void{
