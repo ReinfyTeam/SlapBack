@@ -1,0 +1,13 @@
+{
+    "name": "reinfyteam/slap-back",
+    "description": "PocketMine-MP plugin that makes Slapper entities swing back when hit.",
+    "type": "project",
+    "license": "LGPL-2.1-only",
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "pocketmine/pocketmine-mp": "^5.44.3"
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse -c phpstan.neon.dist"
+    }
+}

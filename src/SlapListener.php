@@ -12,7 +12,7 @@ class SlapListener implements Listener {
     public function __construct(){
     //NOOP
    } 
-    public function onSlapperHit(SlapperHitEvent $ev){
+	public function onSlapperHit(SlapperHitEvent $ev) : void {
 		  $entity = $ev->getEntity();
 		  if(!$entity instanceof SlapperHuman){
 			return;

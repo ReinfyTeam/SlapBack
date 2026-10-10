@@ -1,0 +1,8 @@
+parameters:
+    level: max
+    paths:
+        - src
+    bootstrapFiles:
+        - vendor/autoload.php
+        - stubs/SlapperHuman.php
+        - stubs/SlapperHitEvent.php
