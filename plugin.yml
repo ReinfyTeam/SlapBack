@@ -1,5 +1,5 @@
 ---
-name: SlapperRotation
+name: SlapBack
 version: 1.0.2
 main: ReinfyTeam\SlapBack\Main
 api: 5.0.0
