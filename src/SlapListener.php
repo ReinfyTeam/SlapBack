@@ -1,23 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ReinfyTeam\SlapBack;
 
-use ReinfyTeam\SlapBack\Main;
 use slapper\entities\SlapperHuman;
 use slapper\events\SlapperHitEvent;
 use pocketmine\event\Listener;
 use pocketmine\entity\animation\ArmSwingAnimation;
 
-class SlapListener implements Listener {
-    public function __construct(){
-    //NOOP
-   } 
+final class SlapListener implements Listener {
 	public function onSlapperHit(SlapperHitEvent $ev) : void {
-		  $entity = $ev->getEntity();
-		  if(!$entity instanceof SlapperHuman){
+		$entity = $ev->getEntity();
+		if(!$entity instanceof SlapperHuman){
 			return;
-		  }
-                  $player = $ev->getDamager();
-                  $entity->broadcastAnimation(new ArmSwingAnimation($entity), [$player]);  
-         } 
+		}
+		$player = $ev->getDamager();
+		$entity->broadcastAnimation(new ArmSwingAnimation($entity), [$player]);
+	}
 }

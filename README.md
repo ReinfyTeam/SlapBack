@@ -23,7 +23,6 @@ please report issues to that project instead.
 # How to Install?
 - You must have the [Slapper](https://github.com/ReinfyTeam/Slapper) plugin.
 - Just put this plugin in your `plugins/` folder, and it should work!<br>
-- You can configure the plugin by accessing `plugin_data/SlapBack/config.yml`
 
 # Report a Issue/Bug
 You found a bug or a plugin issue?
