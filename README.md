@@ -1,7 +1,7 @@
 # SlapBack
 [![](https://poggit.pmmp.io/shield.state/SlapBack)](https://poggit.pmmp.io/p/SlapBack)
 [![](https://poggit.pmmp.io/shield.api/SlapBack)](https://poggit.pmmp.io/p/SlapBack)<br>
-Slappers can now hit back at you!
+Slapper entities react with an arm-swing animation when hit.
 
 # Requirements
 
@@ -14,22 +14,23 @@ SlapBack is maintained by ReinfyTeam. Compatibility checks in this campaign use
 server distribution.
 
 # Features
-- Ability to configure the behavior of the Slappers.
+- Makes a SlapperHuman swing its arm when it is hit.
+- The plugin does not apply damage or change the Slapper's health.
 
 # Disclaimer
 This plugin is designed for PocketMine-MP. If you are using a fork or spoon,
 please report issues to that project instead.
 
-# How to Install?
+# Installation
 - You must have the [Slapper](https://github.com/ReinfyTeam/Slapper) plugin.
-- Just put this plugin in your `plugins/` folder, and it should work!<br>
+- Put this plugin in your `plugins/` folder.
 
-# Report a Issue/Bug
-You found a bug or a plugin issue?
+# Report an issue
+If you find a bug or another plugin issue:
 - Contact support in the [Discord Server](https://discord.gg/v2rNeHaptd)
 - Create an [Issue](https://github.com/ReinfyTeam/SlapBack/issues)
-- Write your bug & the issue you are having with all informations including the crash or errors so I can track the issue.
-- Submit the issue and be patient for a response for a solution to your problem :D
+- Include the problem, crash or error details, and relevant logs so the issue can be investigated.
+- Submit the issue and wait for a response.
 
 # Build and test
 
@@ -39,8 +40,7 @@ and validate the plugin PHAR. Development checks use Composer and PHPStan:
     composer install
     composer analyse
 
-The packaged plugin must retain plugin.yml, the resources/ directory and the
-PHP source under src/.
+The packaged plugin must retain plugin.yml and the PHP source under src/.
 
 # License
 
